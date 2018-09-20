@@ -1,0 +1,93 @@
+/* container section formatting */
+#grammarContainer {
+    width: 100%;
+    height: 100px;
+    border-top: 3px solid black;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+#grammarButtonsContainer {
+    width: 100%;
+    min-height: 10px;
+}
+#createGrammarButtonContainer {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#grammarsHeader {
+    font-family: arial;
+    font-size: 15px;
+}
+.grammarButton {
+    min-height: 30px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-color);
+    border: none ;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px; 
+    outline: 0;
+    draggable: false;
+    z-index: 0;
+}
+.grammarButton:hover {
+    cursor: pointer;
+}
+
+#createGrammarButton {
+    width: 100%;
+    line-height: 25px;
+    background-color: var(--tertiary-color);
+}
+
+#createGrammarButton:hover {
+    background-color: var(--tertiary-color-highlight);
+}
+
+    /* the dropdown content */
+.grammarButtonAndDropdownContainer {
+    min-width: 130px;
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+}
+.grammar-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color-sub);
+    text-align: center;
+    width: 100%;
+}
+.grammar-dropdown-content a {
+    display: block;
+    line-height: 25px;
+    font-size: 14px;
+}
+.grammar-dropdown-content a:hover {
+    cursor: pointer;
+    background-color: var(--primary-color-sub-highlight);
+    font-style: italic;
+    color: white;
+}
+    /* pseudo event handler to execute dropdown content */
+.grammarButtonAndDropdownContainer:hover .grammar-dropdown-content {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+/* the toggle off styling */
+.toggleOffButton {
+   background-color: var(--secondary-color-bold); 
+}
+.toggleOffDropdown {
+   color: white;
+   background-color: var(--secondary-color);
+}
+.toggleOffDropdown a:hover {
+   background-color: var(--secondary-color-highlight);
+}

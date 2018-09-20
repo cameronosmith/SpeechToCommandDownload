@@ -1,0 +1,32 @@
+
+#micAndInterimContainer {
+    float: left;
+    display: inline-block;
+}
+
+#mic {
+    /* make image smaller proportionately */    
+    width: 54px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#micInstructionsAndInterimDisplayContainer {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-family: arial;
+    height: 20px;
+    width: 200px;
+}
+
+#interimResults {
+    color: gray;
+    display: inline-block;
+}
+
+#finalTranscriptionResult {
+    display: inline-block;
+}

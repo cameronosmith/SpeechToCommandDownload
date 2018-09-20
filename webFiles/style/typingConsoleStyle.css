@@ -1,0 +1,60 @@
+#consoleAndModContainer {
+    display: inline-block;
+}
+#typingConsoleContainer {
+    width: 70%;
+    height: 85px;
+    display: inline-block;
+}
+/* response text container and children */
+#typingConsoleTextContainer {
+    height: 80%;
+    width: 95%;    
+    border: 2px solid black;
+    overflow-y: scroll;
+    margin: 0 auto;
+    margin-top: 1%;
+    text-align: center;
+}
+.consoleText {
+    font-family: arial;
+    font-size: 12px;
+    color: black;
+    margin: 5px;
+}
+/* dictation status container and children */
+#dictationModificationContainer {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.dictationModeButton {
+    display: inline-block;
+    outline: 0;
+    border: none ;
+    min-width: 80px;
+    padding: 3px;
+    height: auto;
+    margin: 5px;
+    margin-top: 5px;
+}
+.dmbOn {
+    background: var(--primary-color);
+}
+.dmbOn:hover {
+    background: var(--primary-color-highlight);
+    font-style: italic;
+    cursor: pointer;
+}
+.dmbOff {
+    background: var(--secondary-color-bold);
+    color: white;
+}
+.dmbOff:hover{
+    background: var(--secondary-color);
+    color: black;
+    font-style: italic;
+    cursor: pointer;
+}
+

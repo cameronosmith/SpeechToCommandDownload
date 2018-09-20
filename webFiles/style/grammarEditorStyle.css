@@ -1,0 +1,110 @@
+/* the modal styling */
+#grammarModal-background {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,.3);
+}
+/* main container div for grammar editor */
+#grammarEditorOuter {
+    height: 90%;
+    width: 500px;
+    background-color: lightgray;
+    position: fixed;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+/* header of grammar editor */
+#grammarEditorHeader {
+    height: 100px;
+    width:100%;
+    border-bottom: 3px solid #e1e4ea;
+    background-color: var(--secondary-color);
+}
+.headerElements {
+    margin-top: 40px;
+    text-align: center;
+    height: 30px;
+}
+#grammarEditorTitle {
+   float: left; 
+   font-size; 20;
+   margin-left: 10%;
+}
+#saveButton, #closeButton {
+   float:right; 
+   margin-right: 15px;
+}
+.geButton {
+    background-color: var(--primary-color); 
+    border-radius: 28px;
+    border: none ;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px; 
+    outline: 0;
+    draggable: false;
+}
+.geButton:hover {
+    cursor: pointer;
+    background-color: var(--primary-color-highlight); 
+}
+/* text input label section of grammar editor */
+#grammarEditorVocabSection {
+    /* height is 100% minus height of header */
+    overflow-y: scroll;
+    height: calc(100% - 115px);
+    width: 100%;
+    margin-top: 10px;
+}
+.vocabItem {
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
+.vocabInput {
+    width: 215px;
+    min-height: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.command {
+    --separation: 15px;
+    margin-right: var(--separation);
+}
+.keySequence {
+    margin-left: var(--separation);
+}
+input {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    color: black;
+    border: none;
+    background: #e8eeef;
+    font-size: 15px;
+}
+/* add empty vocab button/container section */
+#appendEmptyVocabContainer {
+    height: 50px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+#appendEmptyVocabButton {
+    height: 30px;
+    width: 40px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+

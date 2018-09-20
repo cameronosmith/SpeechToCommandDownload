@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style/rootColors.css"> 
+    <link rel="stylesheet" type="text/css" href="style/dictationStyle.css"> 
+    <link rel="stylesheet" type="text/css" href="style/typingConsoleStyle.css"> 
+    <link rel="stylesheet" type="text/css" href="style/grammarButtonsStyle.css"> 
+    <link rel="stylesheet" type="text/css" href="style/grammarEditorStyle.css"> 
+    <title>Speech to Command</title>
+</head>
+
+<script>
+</script>
+
+
+<!-- start html components -->
+<div id="micAndInterimContainer">
+    <img id="mic" src="style/img/muted.png">
+    <div id="micInstructionsAndInterimDisplayContainer">
+        <p id="finalTranscriptionResult"> Click on the microphone to start dictation </p>
+        <p id="interimResults"></p> 
+    </div>
+</div>
+<!-- typing manager console section -->
+    <div id="typingConsoleContainer">
+        <div id="typingConsoleTextContainer"></div> 
+        <div id="dictationModificationContainer">
+            <button title="keyword='caps'" id="fullCapsMode" onclick="DMBClick($(this))" class="dictationModeButton dmbOn">full-caps</button> 
+            <button title="keyword='semi'" id="semiCapsMode" onclick="DMBClick($(this))" class="dictationModeButton dmbOn">semi-caps</button> 
+            <button title="keyword='spacing'" id="spacingMode" onclick="DMBClick($(this))" class="dictationModeButton dmbOn">spacing</button> 
+            <button title="keyword='typing'" id="typingMode" onclick="DMBClick($(this))" class="dictationModeButton dmbOn">typing</button> 
+            <button title="keyword='scribe'" id="pureDictationMode" onclick="DMBClick($(this))" class="dictationModeButton dmbOn">pure dictation</button> 
+        </div>
+    </div>
+
+<!-- grammar buttons section -->
+<div id="grammarContainer">
+    <p id="grammarsHeader">Grammars: </p>
+    <div id="grammarButtonsContainer"> </div>
+    <div id="createGrammarButtonContainer"> </div>
+</div>
+<!-- end html components -->
+
+<!-- scripts -->
+<script src="scripts/jquery.js"></script>
+<script src="scripts/dictationScript.js"></script> 
+<script src="scripts/javaJsCommunicationScript.js"></script>
+<script src="scripts/typingConsoleScript.js"></script>
+<script src="scripts/grammarEditorScript.js"></script>
+<script src="scripts/grammarButtonScript.js"></script>
+<script src="scripts/main.js"></script>
